@@ -5,18 +5,10 @@ window.onload = function() {
   r.init();
   
   // create a new X.mesh
-  var porsche = new X.mesh();
+  volume = new X.volume();
   // .. and associate the .stl to it
-  porsche.file = 'data/porsche.stl';
-  // activate the magic mode which results in a colorful rendering since the
-  // point colors are based on the point position
-  porsche.magicmode = true;
-  // set a caption which appears on mouseover
-  porsche.caption = 'The magic Porsche!';
-  
-  // .. add the porsche
-  r.add(porsche);
-  
+  volume.file= 'data/daniel.nrrd';
+  r.add(volume);
   // .. and start the loading/rendering
   r.render();
   
